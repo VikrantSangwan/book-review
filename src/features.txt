@@ -1,0 +1,8 @@
+1. Book review Application
+2. Read Books from JSON
+3. On Click of card go to book page
+4. On Book page, users can rate book5. Users can add reviews.
+6. Users can add reviews.
+7. User Registeration
+8. User Login
+9. State Management using Redux
