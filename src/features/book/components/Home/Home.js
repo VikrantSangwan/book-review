@@ -19,9 +19,9 @@ function Home() {
     <div className="container">
       <Header />
       <div className="row">
-        {books.map((book) => (
+        {books.map((book, index) => (
           <div className="col-md-2">
-            <BookCard item={book} />
+            <BookCard item={book} key={index} />
           </div>
         ))}
       </div>

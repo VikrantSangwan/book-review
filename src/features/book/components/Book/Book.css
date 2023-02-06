@@ -1,0 +1,8 @@
+.book-card {
+    margin: 30px;
+    padding: 8px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    width: 20%;
+
+}
