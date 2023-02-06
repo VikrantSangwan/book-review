@@ -1,14 +1,16 @@
 import BookCard from "../BookCard/BookCard";
 import Header from "../Header/Header";
 import { useEffect, useState } from "react";
+import "./Home.css";
 
 function Home() {
-  let [books, setbooks] = useState([]);
+  const [books, setbooks] = useState([]);
 
   useEffect(() => {
     fetch("book.json")
       .then((res) => res.json())
       .then((res) => {
+        console.log(res);
         setbooks(res);
       });
   }, []);
@@ -17,11 +19,11 @@ function Home() {
     <div className="container">
       <Header />
       <div className="row">
-        {books.map((book) => {
-          <div className="col-md-3">
-            <BookCard />
-          </div>;
-        })}
+        {books.map((book) => (
+          <div className="col-md-2">
+            <BookCard item={book} />
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -1,3 +1,29 @@
 .card {
-    width: 100% !important;
+    margin: 10px;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+.card-body {
+    height: 250px;
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-text {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card-text>span {
+    font-weight: 400;
 }

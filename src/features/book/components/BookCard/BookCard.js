@@ -1,25 +1,27 @@
 import React from "react";
 import "./BookCard.css";
 
-function BookCard() {
+function BookCard(props) {
   return (
     <div className="card">
-      <img
-        src="images/the-divine-comedy.jpg"
-        className="card-img-top"
-        alt="..."
-      />
+      <img src={props.item.imageLink} className="card-img-top" alt="..." />
       <div className="card-body">
-        <h5 className="card-title">The Divine Comedy</h5>
+        <h5 className="card-title">{props.item.title}</h5>
         <p className="card-text">
-          Author: <span>Dante Alighieri</span>
+          Author: <span>{props.item.author}</span>
         </p>
         <p className="card-text">
-          Year: <span>2013</span>
+          Year: <span>{props.item.year}</span>
         </p>
-        <p className="card-text">
-          Pages <span>397</span>
-        </p>
+        <div className="data-container">
+          <p className="card-text">
+            Langauge: <span>{props.item.language}</span>
+          </p>
+
+          <p className="card-text">
+            Pages: <span>{props.item.pages}</span>
+          </p>
+        </div>
         <a href="#" className="btn btn-primary">
           Review Now
         </a>
