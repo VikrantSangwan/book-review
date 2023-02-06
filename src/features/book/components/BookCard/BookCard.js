@@ -24,9 +24,9 @@ function BookCard(props) {
               Pages: <span>{props.item.pages}</span>
             </p>
           </div>
-          <a href="#" className="btn btn-primary">
+          <Link to="/" className="btn btn-primary">
             Review Now
-          </a>
+          </Link>
         </div>
       </div>
     </Link>

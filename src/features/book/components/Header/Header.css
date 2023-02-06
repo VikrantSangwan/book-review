@@ -3,3 +3,11 @@
     display: flex;
     justify-content: end;
 }
+
+.search-container {
+    width: 400px;
+}
+
+.cmyNjn>.wrapper {
+    z-index: 10 !important;
+}
